@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b10aa07f-cb9e-4ab3-9913-c28a288e331c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>bsco.py</StartupFile>
+    <StartupFile>crmm.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -15,7 +15,7 @@
     <InterpreterId>{9becac87-c593-467b-843d-0c82f2c7012b}</InterpreterId>
     <InterpreterVersion>3.5</InterpreterVersion>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>-m compact -i "D:\Data Files\TG\bsco\bscometadata.json" -o "D:\Data Files\TG\bsco\bscometa.xlsx"</CommandLineArguments>
+    <CommandLineArguments>-i "D:\Data Files\Corpora\Dutch\CRM\CRM_Meertens.xlsx" -o "D:\Data Files\Corpora\Dutch\CRM\mrg"</CommandLineArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -28,6 +28,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="bsco.py" />
+    <Compile Include="crmm.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="models.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="util.py">
       <SubType>Code</SubType>
     </Compile>
@@ -44,6 +50,9 @@
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
       <Architecture>X86</Architecture>
     </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.txt" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

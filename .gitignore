@@ -243,3 +243,4 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/bsco/__pycache__/models.cpython-35.pyc
